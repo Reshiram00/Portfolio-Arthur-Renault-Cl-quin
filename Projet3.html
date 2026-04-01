@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 3 - Portfolio Arthur Renault-Cléquin</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="conteneur">
+            <h1>Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#profil">Accueil</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#loisirs">Loisirs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-projet">
+            <div class="conteneur">
+                <div class="retour-projet-haut">
+                    <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                </div>
+                <h2>Automatisation SAS & Pilotage Excel</h2>
+                <p>Conception d'une chaîne de traitement de données modulaire, entièrement pilotée par des paramètres externes.</p>
+            </div>
+        </section>
+
+        <section class="details-projet">
+            <div class="conteneur">
+                <div class="disposition-projet">
+                    <div class="image-projet">
+                        <img src="image/proj3.png" alt="Architecture du projet SAS">
+                    </div>
+                    <div class="info-projet">
+                        <h3>Contexte</h3>
+                        <p>
+                            Ce projet visait à industrialiser un processus de traitement de données complexe. L'enjeu principal était 
+                            de sortir de la logique "codée en dur" pour créer une application SAS flexible. J'ai conçu une architecture 
+                            où l'utilisateur contrôle l'exécution via un fichier Excel (Pilotage.xlsx), sans jamais 
+                            avoir besoin de modifier le code source SAS.
+                        </p>
+
+                        <h3>Fonctionnalités</h3>
+                        <ul>
+                            <li><strong>Pilotage externe :</strong> Contrôle des paramètres (dates, périmètres, options) via un fichier Excel importé dynamiquement.</li>
+                            <li><strong>Structure modulaire :</strong> Découpage du traitement en étapes logiques (Programme1 à Programme4) pour faciliter la maintenance.</li>
+                            <li><strong>Bibliothèque de Macros :</strong> Utilisation d'un fichier dédié (macrop.sas) centralisant les fonctions réutilisables.</li>
+                            <li><strong>Automatisation :</strong> Exécution en chaîne des programmes sans intervention manuelle.</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>SAS Base & SAS Macro (avancé)</li>
+                            <li>Excel (pour l'interface de pilotage)</li>
+                            <li>Procédure d'import/export</li>
+                        </ul>
+
+                        <h3>Ce que j'ai appris</h3>
+                        <p>
+                            Ce projet m'a permis de maîtriser la programmation dynamique sous SAS. J'ai appris à concevoir 
+                            des outils robustes et conviviaux, capables d'être utilisés par des personnes ne connaissant 
+                            pas le langage SAS.
+                        </p>
+
+                        <div class="boutons-projet-bas">
+                            <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteneur">
+            <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

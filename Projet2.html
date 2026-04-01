@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 2 - Portfolio Arthur Renault-Cléquin</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="conteneur">
+            <h1>Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#profil">Accueil</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#loisirs">Loisirs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-projet">
+            <div class="conteneur">
+                <div class="retour-projet-haut">
+                    <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                </div>
+                <h2>Enquête & Redressement Statistique</h2>
+                <p>Réalisation d'une enquête de A à Z : du questionnaire au redressement des données via la macro CALMAR.</p>
+            </div>
+        </section>
+
+        <section class="details-projet">
+            <div class="conteneur">
+                <div class="disposition-projet">
+                    <div class="image-projet">
+                        <img src="image/proj2.png" alt="Questionnaire pratiques culturelles">
+                    </div>
+                    <div class="info-projet">
+                        <h3>Contexte</h3>
+                        <p>
+                            Ce projet avait pour but d'analyser les pratiques culturelles des étudiants (cinéma, lecture, musées) 
+                            pour l'année 2025. Au-delà de la simple collecte de réponses via le questionnaire, le défi majeur était de corriger 
+                            la distorsion de l'échantillon. En effet, les répondants n'étaient pas parfaitement représentatifs 
+                            de la population étudiante réelle (différences de répartition par sexe ou discipline observées dans les statistiques administratives).
+                        </p>
+
+                        <h3>Méthodologie</h3>
+                        <ul>
+                            <li><strong>Conception :</strong> Création du questionnaire d'enquête ciblant les habitudes de consommation culturelle.</li>
+                            <li><strong>Traitement des marges :</strong> Comparaison des effectifs réels (Données administratives théoriques) vs Données collectées.</li>
+                            <li><strong>Redressement (Calage) :</strong> Utilisation de la macro SAS CALMAR (Calage sur Marges) pour recalculer les poids des individus et rendre l'échantillon représentatif.</li>
+                            <li><strong>Analyse :</strong> Exploitation des données redressées sous Excel pour produire des statistiques fiables.</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li><strong>SAS :</strong> Macro %CALMAR (Standard INSEE) pour le redressement.</li>
+                            <li><strong>Excel :</strong> Nettoyage des données brutes et tableaux croisés dynamiques.</li>
+                            <li><strong>Techniques de sondage :</strong> Echantillonnage, quotas et pondération.</li>
+                        </ul>
+
+                        <h3>Ce que j'ai appris</h3>
+                        <p>
+                            Ce projet m'a appris qu'une donnée brute est rarement utilisable telle quelle. J'ai acquis une 
+                            compétence clé en statistiques publiques : le <strong>redressement d'échantillon</strong>, 
+                            indispensable pour éviter de tirer des conclusions biaisées à partir d'un sondage.
+                        </p>
+
+                        <div class="boutons-projet-bas">
+                            <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteneur">
+            <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

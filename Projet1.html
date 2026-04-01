@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1 - Portfolio Arthur Renault-Cléquin</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="conteneur">
+            <h1>Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#profil">Accueil</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#loisirs">Loisirs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-projet">
+            <div class="conteneur">
+                <div class="retour-projet-haut">
+                    <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                </div>
+                <h2>Prévision de la Production Nucléaire</h2>
+                <p>Analyse de séries temporelles et modélisation prédictive de la production énergétique aux USA (2001-2025).</p>
+            </div>
+        </section>
+
+        <section class="details-projet">
+            <div class="conteneur">
+                <div class="disposition-projet">
+                    <div class="image-projet">
+                        <img src="image/proj1.png" alt="Graphique de production nucléaire">
+                    </div>
+                    <div class="info-projet">
+                        <h3>Contexte</h3>
+                        <p>
+                            Réalisé dans le cadre du module "Description et Prévision de séries temporelles", ce projet portait sur 
+                            l'analyse des données de l'EIA (Administration de l'information sur l'énergie). L'objectif était de modéliser 
+                            l'évolution mensuelle de la production d'énergie nucléaire aux États-Unis sur 24 ans (2001-2024) 
+                            pour prédire la production de l'année 2025.
+                        </p>
+
+                        <h3>Méthodologie</h3>
+                        <ul>
+                            <li><strong>Exploration :</strong> Analyse de la tendance et de la saisonnalité (décomposition additive).</li>
+                            <li><strong>Comparaison de 3 modèles :</strong>
+                                <ul>
+                                    <li>Lissage Exponentiel (Holt-Winters).</li>
+                                    <li>Modélisation Stochastique (SARMA / Box-Jenkins).</li>
+                                    <li>Approche Déterministe (Régression polynomiale + Saisonnalité).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Évaluation :</strong> Test des modèles sur l'année 2024 (calcul de l'EQM).</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>Langage R & RStudio</li>
+                            <li>Bibliothèques : ggplot2 (visualisation), forecast, tseries</li>
+                            <li>Manipulation de données temporelles (séries temporelles)</li>
+                        </ul>
+
+                        <h3>Résultats</h3>
+                        <p>
+                            L'analyse a révélé une forte saisonnalité dans la production nucléaire. La comparaison des erreurs (MSE) 
+                            a démontré que le modèle <strong>SARMA</strong> était le plus performant pour capturer les variations récentes, 
+                            avec une erreur moyenne d'environ 1 440 MW/h, surpassant les approches déterministes et Holt-Winters.
+                        </p>
+
+                        <div class="boutons-projet-bas">
+                            <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                            <a href="PDF/Projets/rapport_nucleaire.pdf" class="bouton" target="_blank" rel="noopener noreferrer">Ouvrir le PDF du projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteneur">
+            <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
