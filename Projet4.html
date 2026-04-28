@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 4 - Portfolio Arthur Renault-Cléquin</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="conteneur">
+            <h1>Portfolio Arthur Renault-Cléquin</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#profil">Accueil</a></li>
+                    <li><a href="index.html#portfolio">Projets</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#loisirs">Loisirs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-projet">
+            <div class="conteneur">
+                <div class="retour-projet-haut">
+                    <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                </div>
+                <h2>SAÉ : Lecture & Écriture de fichiers</h2>
+                <p>Automatisation du nettoyage et de la réorganisation de données cinématographiques via Python.</p>
+            </div>
+        </section>
+
+        <section class="details-projet">
+            <div class="conteneur">
+                <div class="disposition-projet">
+                    <div class="image-projet">
+                        <img src="image/proj4.png" alt="Preuve du projet SAE Fichier">
+                    </div>
+                    <div class="info-projet">
+                        <h3>Contexte</h3>
+                        <p>
+                            Dans le cadre de cette SAÉ (Situation d'Apprentissage et d'Évaluation) réalisée lors du BUT1, j'ai dû concevoir un programme Python 
+                            capable de traiter des fichiers de données "bruts" et partiellement corrompus. L'objectif était 
+                            d'industrialiser la conversion d'un format texte non conventionnel vers un format CSV structuré 
+                            et exploitable sous Excel, tout en générant un rapport statistique de synthèse.
+                        </p>
+
+                        <h3>Méthodologie</h3>
+                        <ul>
+                            <li><strong>Parsing de données :</strong> Extraction de chaînes de caractères complexes utilisant des délimiteurs spécifiques (chaque fichier possédant son propre séparateur).</li>
+                            <li><strong>Nettoyage & Formatage :</strong> Mise en conformité des données (Title Case pour les titres, gestion des types entiers/réels, suppression des espaces parasites).</li>
+                            <li><strong>Architecture logicielle :</strong> Organisation rigoureuse du projet (dossiers app/data/res) et utilisation de chemins relatifs pour la portabilité du code.</li>
+                            <li><strong>Statistiques :</strong> Calcul automatique d'indicateurs clés : nombre de films, scores minimum, maximum et moyen (arrondi à deux décimales).</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li><strong>Langage :</strong> Python (Bibliothèque standard uniquement).</li>
+                            <li><strong>Contrainte :</strong> Programmation "pure" sans aucun import de bibliothèque externe.</li>
+                            <li><strong>Gestion de fichiers :</strong> Encodages UTF-8 (lecture) et CP1252 (écriture pour compatibilité Excel).</li>
+                        </ul>
+
+                        <h3>Ce que j'ai appris</h3>
+                        <p>
+                            Ce projet m'a permis de maîtriser la manipulation de données à "bas niveau". J'ai appris à construire un code 
+                            robuste capable de gérer des données hétérogènes et à respecter un cahier des charges technique strict 
+                            sans utiliser d'outils de haut niveau comme Pandas, renforçant ainsi mes bases en algorithmique.
+                        </p>
+
+                        <div class="boutons-projet-bas">
+                            <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteneur">
+            <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

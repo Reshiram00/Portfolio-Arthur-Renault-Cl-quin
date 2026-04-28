@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 5 - Portfolio Arthur Renault-Cléquin</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="conteneur">
+            <h1>Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#profil">Accueil</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#loisirs">Loisirs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-projet">
+            <div class="conteneur">
+                <div class="retour-projet-haut">
+                    <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                </div>
+                <h2>Détection de Profils Biologiques Atypiques</h2>
+                <p>Implémentation sous R de méthodes statistiques avancées (Z-scores modifiés) pour l'analyse de biomarqueurs.</p>
+            </div>
+        </section>
+
+        <section class="details-projet">
+            <div class="conteneur">
+                <div class="disposition-projet">
+                    <div class="image-projet">
+                        <img src="image/proj5.png" alt="Analyse de données biologiques">
+                    </div>
+                    <div class="info-projet">
+                        <h3>Contexte</h3>
+                        <p>
+                            Ce projet visait à identifier des profils biologiques anormaux (potentiellement liés à des pathologies) à partir de prélèvements sanguins (ferritine et fer sérique). L'enjeu était d'implémenter et de tester des algorithmes de détection d'anomalies issus de la littérature scientifique (Saulière et al., 2017) sur des séries d'observations individuelles.
+                        </p>
+
+                        <h3>Méthodologie</h3>
+                        <ul>
+                            <li><strong>Préparation des données :</strong> Nettoyage, gestion des valeurs manquantes et restructuration des dataframes (utilisation de la fonction <code>melt</code>).</li>
+                            <li><strong>Z-score "Leave-one-out" :</strong> Calcul d'une statistique identifiant la valeur maximale anormale en excluant l'observation étudiée de la moyenne et de la variance de la série.</li>
+                            <li><strong>Analyse Temporelle :</strong> Intégration d'une dimension saisonnière pour comparer les moyennes et variances intra et inter-saisons.</li>
+                            <li><strong>Extension Multivariée :</strong> Prise en compte simultanée des deux biomarqueurs via le calcul d'une matrice de variance-covariance.</li>
+                            <li><strong>Évaluation :</strong> Comparaison des statistiques obtenues à des seuils théoriques selon différents taux de faux positifs (0.95 et 0.80).</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li><strong>Langage :</strong> R / RStudio</li>
+                            <li><strong>Statistiques :</strong> Matrices de covariance, Analyse multivariée, Seuillage statistique.</li>
+                            <li><strong>Manipulation :</strong> Fonctions de base R et packages de restructuration de données.</li>
+                        </ul>
+
+                        <h3>Ce que j'ai appris</h3>
+                        <p>
+                            Ce projet m'a confronté à la réalité de la recherche appliquée : traduire des formules mathématiques complexes en code fonctionnel. J'ai compris l'impact de la sensibilité des seuils (taux de faux positifs) dans la prise de décision médicale, et j'ai renforcé ma maîtrise de la manipulation de données sous R.
+                        </p>
+
+                        <div class="boutons-projet-bas">
+                            <a href="index.html#portfolio" class="bouton bouton-retour">← Retour au portfolio</a>
+                            <a href="PDF/Projets/zscore_presentation.pptx" class="bouton"  target="_blank" rel="noopener noreferrer" download>Télécharger la présentation (.pptx)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteneur">
+            <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
